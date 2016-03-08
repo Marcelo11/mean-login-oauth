@@ -1,0 +1,72 @@
+<div class="container">
+    <div id="login-overlay" class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Register with YaelsEverythingStore.com</h4>
+              <p>Please Register to Shop at <b>Yael's Everything Store</b>.
+                You will instantly receive hundreds of amazing shopping deals,  
+                or go back to our <a href="./index.jsp">main site</a>.</p>
+            </div>
+          
+            <div class="modal-body">
+              
+            
+                <form role="form" action="/signup" method="post" >
+					<div class="form-group">
+						<div class="col-xs-6">
+                        <label for="InputName">First Name</label>
+                        <div class="input-group">
+                        <input type="text" class="form-control" name="firstName" ng-model="user.firstName" placeholder="Enter First Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                        <br>
+                        <label for="InputName">Username</label>
+                        <div class="input-group">
+                        <input type="text" class="form-control" name="username" ng-model="user.username" placeholder="Enter Username" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+ <hr>
+                </div>
+                </div>
+                    <div class="form-group">
+                    <div class="col-xs-6">
+
+                        <label for="InputName">Last Name</label>
+                        <div class="input-group">
+                        <input type="text" class="form-control" name="lastName" ng-model="user.lastName" placeholder="Enter Last Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        </div>
+                    
+                        <br>
+                        <label for="InputPassword">Enter Password</label>
+                        <div class="input-group">
+                        <input type="password" class="form-control" name="password" ng-model="user.password" placeholder="Enter Password" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+ <hr>
+                </div>       
+                </div> 
+                
+                    <div class="form-group"> 
+                        <div class="col-xs-12">
+                        <label for="InputEmail">Enter Email</label>
+                        <div class="input-group">
+                        <input type="email" class="form-control" name="email" ng-model="user.email" placeholder="Enter Email" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+<br>
+                     </div>
+                 </div>
+
+
+                  <div class="form-group">
+                  <div class="input-group-addon">
+                  <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success pull-right">
+                  
+                  </div>
+                </div>
+                </form>
+              </div><!---modal-body--->
+          </div>
+       </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{'LOG_IN' | translate}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box"> <br />
+                            <a href="/oauth/facebook/" class="btn facebook btn-block" role="button">{{'LOG_IN' | translate}} {{'USING' | translate}} Facebook</a>
+                            <br />
+                            <a href="/oauth/twitter/" class="btn twitter btn-block" role="button">{{'LOG_IN' | translate}} {{'USING' | translate}} Twitter</a>
+							<br />
+                            <a href="/oauth/google/" class="btn google btn-block" role="button">{{'LOG_IN' | translate}} {{'USING' | translate}} Google</a>
+                        </div>
+						</br>
+                        <div class="col-xs-6 col-sm-6 col-md-6 login-box">
+                            <form role="form" action="/signin" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" class="form-control" name="username" placeholder="Username" required autofocus />
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required />
+                            </div>
+							</br>
+							<button class="btn btn-labeled btn-success btn-lg btn-block" type="submit" value="Register">{{'LOG_IN' | translate}}</button>
+							</br>
+                            <p><a href="http://www.jquery2dotnet.com">{{'LOST_YOUR' | translate}} password?</a></p>
+                            {{'DONT_ACCOUNT' | translate}} <a href="#/signon">{{'SING_UP' | translate}} {{'HERE' | translate}}</a>
+							
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+						<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{'LANGUAGE' | translate}} <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#/" ng-click="changeLanguage('es')">Español</a></li>
+    <li><a href="#/" ng-click="changeLanguage('en')">English</a></li>
+  </ul>
+</div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
